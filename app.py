@@ -30,7 +30,8 @@ class ConvertTemp(Resource):
 
         if scale == 'celsius':
             if target_scale == 'fahrenheit':
-                return temp * 9/5 + 32
+                #return temp * 9/5 + 32.000 # changed from 32 to 32.000 by Mayank Dw. 09/13 first change
+                return temp * 9/5 + 32.000; # added ; to generate error while code  by Mayank Dw. 09/13 first second change
             elif target_scale == 'kelvin':
                 return temp + 273.15
 
